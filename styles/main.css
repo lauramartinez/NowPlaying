@@ -1,0 +1,28 @@
+body{
+	background-color: #F0F2EB;
+	font-family: 'Raleway', sans-serif;
+}
+
+.page-header{
+	background-color: #D4EE5E;
+	border-top: 3px dotted #F4FAD2;
+	border-bottom: 3px dotted #F4FAD2;
+}
+
+	.page-header small{
+		color: white;
+	}
+
+.center-main{
+	float: none;
+	margin: 0 -15px;
+}
+
+@media (min-width: 1200px){
+	.center-main{
+		margin: 25px;
+	}
+}
+
+.isloading-overlay{position:relative;text-align:center;}
+.isloading-overlay .isloading-wrapper{background:#FFFFFF;-webkit-border-radius:7px;-webkit-background-clip:padding-box;-moz-border-radius:7px;-moz-background-clip:padding;border-radius:7px;background-clip:padding-box;display:inline-block;margin:0 auto;padding:10px 20px;top:10%;z-index:9000;}
