@@ -11,10 +11,10 @@ $(function(){
 
 	var twitterParams = {
 
-		consumerKey:'gEFEbGdkVTDfzVgyiiCbzUImi',
-		consumerKeySecret: 'Q4yQ000AiJL110zoNEkBYL0ASl84SUcnaxkCJ01uZzeghqWeXX',
-		tokenKey: '2834545563-3Gp2kIjsN5fFSiph2560NAJanr3WZ6S8pMjzPVU',
-		tokenKeySecret : 'iESkAmBbHXWaCHLrkXN89CUyigMMZ5QHboNYsczUDQLlg'
+		consumerKey:'8W2dYaL1YTGifgXdXnvIt67DL',
+		consumerKeySecret: '5FExZWVaxI4VA9Luio1O32cmPXPsguNfVdOnjL0WJbdzjEDjj8',
+		tokenKey: '15851099-WwYd4O4qK80eURw1BEWASpEvAKw6G6IfS2RSdtQeO',
+		tokenKeySecret : 'jURP30WfBs2E681oyczVwJrNzrsJG4OxmjXD169y9PZvW'
 	};
 
 	/**
@@ -23,7 +23,7 @@ $(function(){
 	 */
 
 	var	getUserLocation = function(){
-		$.get('http://www.telize.com/geoip?callback=?', function (data) {	
+		$.get('http://freegeoip.net/json/?q=', function (data) {
 			if(data.city != null){
 				loc = data.city;
 			}
@@ -62,8 +62,8 @@ $(function(){
 			else if (tweetText.toLowerCase().indexOf("youtu") >= 0){
 				twitterPost = new twitterPoster( tweetText + ' #NowPlaying ' + loc, twitterParams, function(){
 					$.isLoading({ text: "Stay tuned, loading Tweets!" });
-					setTimeout(function(){ 
-						loadTweets(); 
+					setTimeout(function(){
+						loadTweets();
 						$.isLoading( "hide" );
 					}, 20000);
 				});
@@ -84,6 +84,6 @@ $(function(){
 		setEvents();
 
 	}();
-	
+
 	return {};
 });

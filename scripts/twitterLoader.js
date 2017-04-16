@@ -52,7 +52,7 @@ twitterLoader = function(location, params){
 			}
     	});
 
-		drawTweets(tweetIDs);		
+		drawTweets(tweetIDs);
 	};
 
 	/**
