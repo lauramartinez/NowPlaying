@@ -61,7 +61,7 @@ $(function(){
 			//post new tweet if contains a valid youtube link, display loader while the service responds back
 			else if (tweetText.toLowerCase().indexOf("youtu") >= 0){
 				twitterPost = new twitterPoster( tweetText + ' #NowPlaying ' + loc, twitterParams, function(){
-					$.isLoading({ text: "Stay tuned, loading Tweets!" });
+					$.isLoading({ text: "Stay tuned, posting your Tweet!" });
 					setTimeout(function(){
 						loadTweets();
 						$.isLoading( "hide" );
