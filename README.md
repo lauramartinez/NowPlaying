@@ -18,4 +18,4 @@ This one page app displays the most recent tweets sharing YouTube videos by peop
 - is-loading: jQuery plugin to show loader. https://github.com/hekigan/is-loading
 
 ### Services:
-- Telize: IP Geolocation. http://www.telize.com/ 
+- Freegeoip: IP Geolocation. http://freegeoip.net/
